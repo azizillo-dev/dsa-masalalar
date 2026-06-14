@@ -852,13 +852,178 @@
 
 
 
+# # 7
+# def func(a, b, c):
+#     return a > b and b < c
+# print(func(3, 2, 4))
 
 
 
 
 
+# # 8
+# def toqmi(a, b):
+#     return a % 2 == 1 and b % 2 == 1
+# print()
 
 
+
+
+
+# # 9
+# def toqmi(a, b):
+#     return a % 2 == 0 or b % 2 == 0
+
+
+
+# # 10
+# def func(a, b):
+#     return (a % 2 == 1 and b % 2 != 1) or (a % 2 != 1 and b % 2 == 1)
+# print(func(5, 5))
+
+
+
+
+# # 11
+# def func(a, b):
+#     return (a % 2 == 1 and b % 2 == 1) or (a % 2 == 0 and b % 2 == 0)
+# print(func(5, 2))
+
+
+
+# # 12
+# def func(a, b, c):
+#     return a > 0 and b > 0 and c > 0
+# print(func(5, 2, -2))
+
+
+
+
+# # 13
+# def func(a, b, c):
+#     return a > 0 or b > 0 or c > 0
+# print(func(-4, -5, -6))
+
+
+
+# # 14
+# def func(a, b, c):
+#     return a > 0 and (b < 0 and c < 0) or b > 0 and (a < 0 and c < 0) or c > 0 and (b < 0 and a < 0)
+# print(func(3, -3, -4))
+
+
+
+
+# # 15
+# def func(a, b, c):
+#     return (a > 0 and b > 0 and c < 0) or (b > 0 and c > 0 and a < 0) or (a > 0 and c > 0 and b < 0)
+# print(func(3, 3, -4))
+
+
+
+
+# # 16
+# def func(a):
+#     return a % 2 == 0 and len(str(a)) == 2
+# print(func(32))
+
+
+
+# # 17
+# def func(a):
+#     return a % 2 == 1 and len(str(a)) == 3
+# print(func(432))
+
+
+
+
+# # 18
+# def func(a, b, c):
+#     return (a == b and b != c) or (a == c and a != b) or (b == c and b != a) or (a == b and b == c)
+# print(func(2, 1, 3))
+
+
+
+
+
+# # 19
+# def func(a, b, c):
+#     return (a == -b) or (a == -c) or (b == -c) or (a == -b and -c)
+# print(func(-2, -2, -2))
+
+
+
+
+
+# # 20
+# def diff(a):
+#     x, y, z = a % 10, (a // 10) % 10, a // 100
+#     return x != y != z
+# print(diff(322))
+# # Time: O(n)
+# # Memory: O(1)
+
+
+
+
+# 21
+# a = int(input())
+# yuz = a // 100
+# on = (a // 10) % 10
+# bir = a % 10
+# print(yuz < on < bir)
+# # Time: O(1)
+# # Memory: O(1)
+
+
+
+
+# # 22
+# a = int(input())
+# yuz = a // 100
+# on = (a // 10) % 10
+# bir = a % 10
+# print(yuz < on < bir or yuz > on > bir)
+# # Time: O(1)
+# # Memory: O(1)
+
+
+
+
+
+# # 23
+# def func(a):
+#     return str(a) == str(a)[::-1]
+# print(func(121))
+# # Time: O(n)
+# # Memory: O(n)
+
+# def func(a):
+#     yuz = a // 100
+#     bir = a % 10
+#     return yuz == bir
+# print(func(121))
+# # Time: O(1)
+# # Memory: O(1)
+
+
+
+
+# # 24
+# def func(a, b, c):
+#     d = b**2 - 4*a*c
+#     if d >= 0:
+#         return True
+#     return False
+# print(func(1, -4, 4))
+
+
+
+
+# # 25
+# def func(x, y):
+#     return x < 0 and y > 0
+# print(func(-3, 4))
 
 
 
