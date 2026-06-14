@@ -1,0 +1,874 @@
+# def linerSearch(arr, target):
+#     if target in arr:
+#         return arr.index(target)
+#     else:
+#         return -1
+    
+# arr = [1, 3 , 4, 6, 7, 8, 11, 32, 123]
+# target = 8
+# print(linerSearch(arr, target))
+
+
+# myList = [1,3,4,6,7,8,10,12,23,45,56,78,99]
+
+# def binarySearch(lst, target):
+#     low = 0
+#     high = len(lst) - 1
+#     while low <= high:
+#         medium = (low + high) // 2
+#         if lst[medium] == target:
+#             return medium
+#         elif lst[medium] > target:
+#             high = medium - 1
+#         else:
+#             low = medium + 1
+#     return -1
+# print(binarySearch(myList, 10))
+        
+
+
+
+
+
+# def large(a, b, c):
+#     if a > b > c:
+#         return a
+#     elif b > a > c:
+#         return b
+#     return c
+# print(large(3, 6, 9))
+
+
+
+
+# n = int(input("n = "))
+# def sum_juftlar(n):
+#     s = 0
+#     for i in range(n):
+#         if i % 2 == 0:
+#             s += i
+#     return s
+# print(sum_juftlar(n))
+
+
+# word = input("word = ")
+# def reverse(word):
+#     return word[::-1]
+
+# print(reverse(word))
+
+
+
+
+# def linerSearch(list, target):
+#     index = -1
+#     for i in list:
+#         index += 1
+#         if i == target:
+#             return f"{target} {index} - indexda topildi"
+#     return -1
+
+# myList = [1,3,4,6,7,8,10,12,23,45,56,78,99]
+# target = 45
+
+# print(linerSearch(myList, target))
+
+
+
+
+# def FizzBuzz(n):
+#     if n % 3 == 0 and n % 5 != 0:
+#         return "Fizz"
+#     elif n % 3 != 0 and n % 5 == 0:
+#         return "Buzz"
+#     elif n % 3 == 0 and n % 5 == 0:
+#         return "FizzBuzz"
+#     return -1
+
+# print(FizzBuzz(15))
+# print(FizzBuzz(7))
+
+
+
+
+
+
+
+
+# mylist = [5, 6,67, 76, 32, 43,  54, 43, 2324, 2,23, 32, 4345,54, 653]
+
+# def maks(mylist):
+#     max_val = mylist[0]
+#     for i in mylist:
+#         if i > max_val:
+#             max_val = i
+#     return max_val
+# def minn(mylist):
+#     min_val = mylist[0]
+#     for i in mylist:
+#         if i < min_val:
+#             min_val = i
+#     return min_val
+
+# print(maks(mylist))
+# print(minn(mylist))
+
+
+
+
+
+# mevalar = ["olma", "banan", "olma", "uzum", "olma", "banan"]
+
+# def count(list):
+#     takror = {}
+#     for i in mevalar:
+#         if i not in takror:
+#             takror[i] = 1
+#         else:
+#             takror[i] += 1
+#     return takror
+
+# print(count(mevalar))
+
+
+
+# mylist = [5, 6,67, 76, 32, 43,  54,23, 4345, 653]
+
+# def func(mylist):
+#     takror = {}
+#     for i in mylist:
+#         if i not in takror:
+#             takror[i] = 1
+#         else:
+#             takror[i] += 1
+#     for v in  takror.values():
+#         if v != 1:
+#             return False
+#     return True
+# print(func(mylist))
+
+
+
+
+
+# mylist = [2, 3, 5, 7, 9, 11, 45, 54]
+# def two_sum(mylist, target):
+#     i = 0
+#     j = len(mylist) - 1
+#     while i < j:
+#         if mylist[i] + mylist[j] == target:
+#             return f"{mylist[i]} + {mylist[j]} = {target}"
+#         elif mylist[i] + mylist[j] > target:
+#             j -= 1
+#         else:
+#             i += 1
+# print(two_sum(mylist, 12))
+
+
+
+
+
+
+
+# def two_sum_unsorted(nums, target):
+#     seen = {} 
+    
+#     for i, num in enumerate(nums):
+#         needed = target - num 
+        
+#         if needed in seen:
+#             return [seen[needed], i]
+#         seen[num] = i
+        
+#     return "Topilmadi"
+# mylist = [11, 15, 2, 7] 
+# print(two_sum_unsorted(mylist, 9)) 
+
+
+
+
+
+# #hash map
+
+
+
+
+# data = {
+#    "Ali":"99890...",
+#    "Vali":"99891..."
+# }
+
+# def number(name):
+#     if name in data:
+#         return data[name]
+#     return "Bunday ism yo'q" 
+# print(number("Ali")) 
+
+
+
+# data = {
+#    "Aziz":90,
+#    "Ali":70
+# }
+
+
+# def max_val_key(data):
+#     mkey = list(data.keys())[0]
+#     mval = data[mkey]
+
+#     for k, v in data.items():
+#         if v > mval:
+#             mval = v
+#             mkey = k
+#     return f"Eng katta ball: {mval}\nEgasi: {mkey}"
+# print(max_val_key(data))
+
+
+
+
+
+# def avarage_st(data):
+#     return sum(data.values())/len(list(data.values()))
+# print(avarage_st(data))
+
+# def add_student(name, score):
+#     if name not in data:
+#         data[name] = score
+#         return f"{name} qo'shildi"
+#     return "Bunday key band"
+# print(add_student("Azizillo", 100))
+# print(data)
+
+
+
+# def word_counter(matn):
+#     sozlar = matn.split()
+#     new = {}
+
+#     for soz in sozlar:
+#         if soz not in new:
+#             new[soz] = 1
+#         else:
+#             new[soz] += 1
+#     return new
+
+# print(word_counter("apple banana apple orange banana apple"))
+
+# nums = [1, 2, 3, 4, 2]
+
+# # time O(n)
+# # memory O(n)
+
+# def seen(nums):
+#     set_nums = set(nums)
+#     for i in nums:
+#         if i in set_nums:
+#             return True
+#     return False
+# print(seen(nums))
+
+
+
+
+
+
+
+# def first(nums):
+#     seen = set(nums)
+#     for i in nums:
+#         if i in seen:
+#             return i
+#     return False
+
+# # time O(n**2)
+# # memory O(n)
+
+# nums = [5, 1, 3, 4, 3, 5]
+# print(first(nums))
+
+
+
+
+
+
+
+# def counter(sentence):
+#     new = {}
+#     characters = sentence.strip()
+#     for i in characters:
+#         if i in new:
+#             new[i] += 1
+#         else:
+#             new[i] = 1
+#     return new
+# s = " banana"
+# print(counter(s))
+
+
+
+
+
+
+# # s = "listen"
+# # t = "silent"
+
+# # def func(s, t):
+# #     st = s.strip()
+# #     ts = t.strip()
+    
+
+
+
+# nums = [2, 7, 11, 15]
+# target = 9
+
+# def two_sum(mylist, target):
+#     i = 0
+#     j = len(mylist) - 1
+#     while i < j:
+#         if mylist[i] + mylist[j] == target:
+#             return f"{mylist[i]} + {mylist[j]} = {target}"
+#         elif mylist[i] + mylist[j] > target:
+#             j -= 1
+#         else:
+#             i += 1
+# print(two_sum(nums, 12))
+    
+
+
+
+
+
+
+# def two_sum(nums, target):
+#     seen = {}
+
+#     for i, num in enumerate(nums):
+#         need = target - num
+
+#         if need in seen:
+#             return [seen[need], i]
+#         seen[num] = i
+#     return []       
+
+# nums = [2, 7, 11, 15]
+# target = 9
+
+# print(two_sum(nums, target))        
+
+# nums = [2, 3, 5, 7, 9, 11]
+# target = 12
+        
+
+
+# def taget(nums, target):
+#     left = 0
+#     right = len(nums) - 1
+
+#     while right > left:
+#         if nums[left] + nums[right] == target:
+#             return f"{nums[left]} + {nums[right]} = {target}"
+#         elif nums[left] + nums[right] > target:
+#             right -= 1
+#         else:
+#             left += 1
+#     return
+
+# print(taget(nums, target))
+
+
+
+
+# def two_sum_sorted(nums, target):
+#     left = 0
+#     right = len(nums) - 1
+#     while left < right:
+#         total = nums[left] + nums[right]
+#         if total == target:
+#             return [left, right]
+#         elif total > target:
+#             right -= 1
+#         else:
+#             left += 1
+#     return "Topilmadi"
+
+# nums = [2, 3, 5, 7, 9, 11]
+# print(two_sum_sorted(nums, 12))
+        
+
+
+# # takrorlangan birinchi sonni topish
+
+# nums = [4, 2, 7, 2, 9, 4, 1]
+
+# def takror(nums):
+#     seen = {}
+
+#     for num in nums:
+#         if num in seen:
+#             seen[num] += 1
+#         else:
+#             seen[num] = 1
+#     for v, k in seen.items():
+#         if k == 2:
+#             return v
+#             break
+#     return
+# print(takror(nums))
+
+
+
+
+# #2. Har bir harfni sanash
+# s = "banana"
+
+# def counter(s):
+#     seen = dict()  
+#     harflar = s.strip()
+#     for harf in harflar:
+#         if harf not in seen:
+#             seen[harf] = 1
+#         else:
+#             seen[harf] += 1
+#     return seen
+# print(counter(s)) 
+
+
+
+
+# nums = [3, 8, 4, 7, 2]
+# target = 10
+
+# def two_sum(nums, target):
+#     seen = {}
+
+#     for index, num in enumerate(nums):
+#         need = target - num
+#         if need in seen:
+#             return [seen[need], index]
+#         seen[num] = index
+#     return []
+# print(two_sum(nums, target))       
+
+
+
+# # 4. Eng ko‘p uchragan son
+# nums = [1, 3, 2, 3, 4, 3, 2, 2, 2]
+
+# def maxx(nums):
+#     new = {}
+
+#     for num in nums:
+#         if num in new:
+#             new[num] += 1
+#         else:
+#             new[num] = 1
+#     key = max(new, key = new.get)
+#     return key
+# print(maxx(nums))
+
+
+
+
+# # 5. Nollarni oxiriga surish
+
+# nums = [0, 1, 0, 3, 12]
+
+# def zero(nums):
+#     nollar = nums.count(0)
+#     for num in nums:
+#         if num == 0:
+#             nums.remove(num)
+#     for i in range(nollar):
+#         nums.append(0)
+#     return nums
+# print(zero(nums))
+    
+
+
+
+# # 6. Palindrome tekshirish
+# s = "level"
+
+# def isPanlindrom(s):
+#     return s == s[::-1]
+# print(isPanlindrom(s))
+
+
+
+
+
+
+
+
+
+
+# # 7. Faqat bir marta qatnashgan sonlar
+
+
+# nums = [1, 2, 2, 3, 4, 4, 5]
+
+# def sett(nums):
+#     seen = set()
+
+
+
+# 8. Ikkinchi eng katta unikal son
+
+
+# nums = [10, 5, 8, 20, 20, 3]
+
+# def second_max(nums):
+
+
+
+
+
+
+# n = int(input())
+# s = input()
+
+# if len(s) > n:
+#     s = s[len(s)-n:]
+# elif len(s) < n:
+#     s = "." * (n - len(s)) + s
+
+# print(s)
+
+
+
+
+
+
+
+# C++ exe dasturdagi masalalae
+# 13.06.2026
+
+
+# # integer1
+# l = int(input("L : "))
+# print(f"{l} sm = {l/100} m")
+
+
+# # 2
+# m = int(input("m : "))
+# print(f"{m} kg = {m/1000} t")
+
+
+# # 3
+# m = int(input("m : "))
+# print(f"{m} bayt = {m//1024} kb")
+
+
+
+# 4
+# a = int(input("a : "))
+# b = int(input("b : "))
+# print(a//b)
+# time: O(1)
+# memory: O(1)
+
+
+
+
+# 5
+# a = int(input("a : "))
+# b = int(input("b : "))
+# n = a // b
+# c = a - b * n
+# print(f"Joylashishlar soni: {n}")
+# print(f"Ortiqcha qism: {c}")
+# time: O(1)
+# memory: O(1)
+
+
+
+# # 6
+# n = int(input("2 xonali son kiriting: "))
+# print(f"O'nlar xonasi: {n // 10}")
+# print(f"Birlar xonasi: {n % 10}")
+# time: O(1)
+# memory: O(1)
+
+
+# 7
+# n = int(input("2 xonali son kiriting: "))
+# s = 0
+# while n > 0:
+#     s += n % 10
+#     n //= 10
+# print(s)
+# time: O(log n)
+# memory: O(1)
+
+    
+
+
+# # 8
+# n = int(input("2 xonali son kiriting: "))
+# print(int(str(n)[::-1]))
+# # time: O(n)
+# # memory: O(n)
+
+# teskari = 0
+# while n > 0:
+#     teskari = teskari * 10 + n % 10
+#     n //= 10
+# print(teskari)
+# # time: O(n)
+# # memory: O(1)
+
+
+
+# # 9
+# n = int(input("3 xonali son: "))
+# print(f"100 lar xonasidagi son: {n//100}")
+# # time: O(1)
+# # memory: O(1)
+
+
+
+# # 10
+# n = int(input("3 xonali: "))
+# bir = n % 10
+# on = (n // 10) % 10
+# print(f"Birlar xonasi: {bir}")
+# print(f"O'nlar xonasi: {on}")
+# time: O(1)
+# memory: O(1)
+
+
+
+# print(f"Birlar: {str(n)[-1]}")
+# print(f"O'nlar: {str(n)[1:2]}")
+# # time: O(n)
+# # memory: O(n)
+
+
+
+# # 11
+# a = int(input("3 xonali: "))
+# s = 0
+
+# while a > 0:
+#     s += a % 10
+#     a //= 10
+# print(s)
+
+# # time: O(n)
+# # memory: O(1)
+
+
+
+
+# # 12
+# a = int(input("3 xonali: "))
+# print(int(str(a)[::-1]))
+# # time: O(n)
+# # memory: O(n)
+
+# teskari = 0
+# while a > 0:
+#     teskari = teskari * 10 + a % 10
+#     a //= 10
+# print(teskari)
+# # time: O(n)
+# # memory: O(1)
+
+
+
+# 13
+# a = int(input("3 xonali: "))
+# b = str(a)[1:] + str(a)[0]
+# print(int(b))
+# # time: O(n)
+# # memory: O(n)
+
+
+# c = a // 100
+# b = a % 100
+# d = b * 10 + c
+# print(d)
+# # time: O(1)
+# # memory: O(1)
+
+
+
+# # 15
+# a = int(input("3 xonali: "))
+# yuz = a // 100
+# on = (a // 10) % 10
+# new = on * 100 + yuz * 10 + a % 10
+# print(new)
+# # time: O(1)
+# # Memory: O(1)
+
+
+
+
+# # 17
+# n = int(input())
+# print((n // 100) % 10)
+# # time: O(1)
+# # Memory: O(1)
+
+
+
+
+# # 19
+# N = int(input())
+# minut = N // 60
+# print(minut)
+# # time: O(1)
+# # Memory: O(1)
+
+
+
+
+# # 20
+# N = int(input())
+# soat = N // 3600
+# print(soat)
+# # time: O(1)
+# # Memory: O(1)
+
+
+
+
+# # 21
+# N = int(input())
+# minut = N // 60
+# sekund = N % 60
+# print(f"{minut} minut va {sekund} sekund")
+# # time: O(1)
+# # Memory: O(1)
+
+
+
+
+# # 22
+# N = int(input())
+# soat = N // 3600
+# sekund = N % 3600
+# print(f"{soat} soat va {sekund} sekund")
+# # time: O(1)
+# # Memory: O(1)
+
+
+
+
+# # 23
+# n = int(input("n : "))
+# soat = n // 3600
+# minut = (n % 3600) // 60
+# sekund = n % 60
+# print(f"{soat} soat, {minut} minut va {sekund} sekund")
+# # time: O(1)
+# # Memory: O(1)
+
+
+
+# 24
+# hafta_kunlari = ["Yakshanba", "Dushanba", "Seshanba", "Chorshanba", "Payshanba", "Juma", "Shanba"]
+# kun = int(input("Kun raqamini kiriting: "))
+# print(hafta_kunlari[kun % 7])
+
+
+
+# # 25
+# k = int(input("Kun raqamini kiriting: "))
+# print(hafta_kunlari[(k + 3) % 7])
+
+
+
+
+# 26
+# hafta_kunlari = ["Dushanba", "Seshanba", "Chorshanba", "Payshanba", "Juma", "Shanba", "Yakshanba"]
+# kun = int(input("Kun raqamini kiriting: "))
+# print(hafta_kunlari[(kun + 5) % 7])
+
+
+
+
+
+
+
+
+# bool ga oid masalalar
+# bool ga oid masalalar
+# bool ga oid masalalar
+# bool ga oid masalalar
+# bool ga oid masalalar
+# bool ga oid masalalar
+
+# # 1
+# def is_musbat(a):
+#     return a > 0
+# print(is_musbat(-4))
+
+
+
+
+
+# # 2
+# def is_toq(a):
+#     return a % 2 ==1
+# print(is_toq(7))
+
+
+
+
+
+# 3
+# def is_juft(a):
+#     return a % 2 ==0
+# print(is_juft(7))
+
+
+
+
+# # 4
+# def func(a, b):
+#     return a > 2 and b <= 3
+# print(func(3, 2))
+
+
+
+
+# # 5
+# def func(a, b):
+#     return a > 0 or b < -2
+# print(func(-1, -3))
+
+
+
+
+# # 6
+# def func(a, b, c):
+#     return a <= b and b <= c
+# print(func(1, 2, 3)) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
