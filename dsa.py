@@ -1026,6 +1026,411 @@
 # print(func(-3, 4))
 
 
+# s = ["H","a","n","n","a","h"]
+
+# def reverseString(s):
+#     new = []
+#     i = len(s) - 1
+#     while i >= 0:
+#         new.append(s[i])
+#         i -= 1
+#     return new
+
+# print(reverseString(s))
+
+
+
+
+
+
+# # 26
+# def func(x , y):
+#     return x > 0 and y < 0
+# print(func(3, -4))
+
+
+
+# # 27
+# def func(x, y):
+#     return (x < 0 and y > 0) or (x < 0 and y < 0)
+# print(func(1, 2))
+# print(func(1, -2))
+# print(func(-1, -2))
+
+
+
+
+# # 29
+# def func(x, y, x1, y1, x2, y2):
+#     return x > x1 and x < x2 and y > y2 and y < y1
+# print(func(1, 2, 3,2, 4,5))
+    
+
+
+
+# # 30
+# def func(a, b, c):
+#     return a == b == c
+# print(func(3, 2, 3))
+
+
+
+# # 31
+# def func(a, b, c):
+#     return a == b and a != c or a == c and a != b or b == c and b != a
+# print(func(3, 2, 1))
+
+
+
+# # 32
+# def func(a, b, c):
+#     return a**2 + b**2 == c**2 or a**2 + c**2 == b**2 or c**2 + b**2 == a**2
+# print(func(3, 4, 5))
+
+
+# # 33
+# def func(a, b, c):
+#     return a + b > c and b + c > a and a + c > b
+# print(func(3, 2, 1))
+
+
+
+
+
+# # 34
+# def func(x, y):
+#     if x == y:
+#         return False
+#     elif x % 2 == 0 and y % 2 != 0 or y % 2 == 0 and x % 2 != 0:
+#         return True
+#     return False
+# print(func(4, 5))
+
+
+
+# # 35
+# def func(x, y, x1, y1):
+#     return (x + y) % 2 == (x1 + y1) % 2
+# print(func(3, 4, 8, 7))
+
+
+
+# # 36
+# def func(x, y, x1, y1):
+#     if x == x1 or y == y1:
+#         return True
+#     return False
+# print(func(1, 1, 1, 7))
+
+
+
+
+
+# # 37
+# def func(x1, y1, x2, y2):
+#     return abs(x1 - x2) <= 1 and abs(y1 - y2) <= 1
+
+
+
+
+
+# # 38
+# def func(x1, y1, x2, y2):
+#     return abs(x1-x2)==abs(y1-y2)
+# print(func(3,5,5,7))
+
+
+
+
+# # 39
+# def boolean39(x1, y1, x2, y2):
+#     k = (x1 == x2) or (y1 == y2)
+#     diagonal = abs(x1 - x2) == abs(y1 - y2)
+    
+#     return k or diagonal
+
+# print(boolean39(4, 4, 4, 8)) 
+# print(boolean39(4, 4, 1, 7))  
+
+
+
+
+# 40
+# def boolean40(x1, y1, x2, y2):
+#     dx = abs(x1 - x2)
+#     dy = abs(y1 - y2)
+#     return (dx == 1 and dy == 2) or (dx == 2 and dy == 1)
+# print(boolean40(4, 4, 5, 6))
+
+
+
+
+
+
+
+
+
+
+#######################################################################################
+#                                                                                     #
+#                         shart opertoriga oid 30 ta masala                           #
+#                                                                                     #
+#######################################################################################
+
+# # 1
+# def if1(a):
+#     x = a + 1 if a > 0 else a
+#     return x
+# print(if1(5))
+
+
+# # 2
+# def if2(a):
+#     x = a + 1 if a > 0 else a -2
+#     return x
+# print(if2(5))
+
+
+
+# # 3
+# def if3(a):
+#     x = a + 1 if a > 0 else (a - 2 if a < 0 else 2)
+#     return x
+# print(if3(3))
+
+
+
+
+
+# # 4
+# def if4(data):
+#     s = 0
+#     for i in data:
+#         if i > 0:
+#             s += 1
+#     return s
+# print(if4([1, -3, -4]))
+
+
+
+
+
+# 5
+# def if9(a, b):
+#     if b > a:
+#         a, b = b, a
+#     return f"a = {a} b = {b}"
+# print(if9(3, 4))
+# print(if9(5, 3))
+
+
+# # 6
+# def if10(a, b):
+#     if a != b:
+#         a = b = a + b
+#     else:
+#         a = b = 0
+#     return a, b
+# print(if10(5, 3))
+# print(if10(5, 5))
+
+
+
+
+# # 7
+# def if11(a, b):
+#     if a != b:
+#         if a > b:
+#             a = b = a
+#         b = a = b
+#     else:
+#         a = b = 0
+#     return a, b
+# print(if11(5, 3))
+# print(if11(1, 1))
+
+
+
+
+# # 8
+# def if12(a, b, c):
+#     if a > b > c:
+#         return f"Eng kattasi a = {a}"
+#     elif b > a > c:
+#         return f"b = {b}"
+#     else:
+#         return f"c = {c}"
+# print(if12(3, 5, 2))
+
+
+
+
+# # 9
+# def if13(a, b, c):
+#     if a > b and a < c:
+#         return a
+#     elif b > a and b < c:
+#         return b
+#     else:
+#         return c
+# print(if13(78, 6, 4))
+
+
+
+
+
+# # 10
+# def if14(a, b, c):
+#     if a > b > c:
+#         return a, b
+#     elif b > a > c:
+#         return b, a
+#     elif b > c > a:
+#         return b, c
+#     elif a > c > b:
+#         return a, c
+#     elif c > a > b:
+#         return c, a
+#     elif c > b > a:
+#         return c, b
+# print(if14(18, 118, 54))
+
+
+
+
+
+# # 11
+# def if15(a, b, c):
+#     if a > b > c:
+#         return a + b
+#     elif b > c > a:
+#         return b + c
+#     elif c > a > b:
+#         return c + a
+# print(if15(218, 118, 254))  
+
+
+
+
+
+
+
+# # 12
+# def if16(a, b, c):
+#     if a < b < c:
+#         return a *2, b*2, c*2
+#     else:
+#         return -a, -b, -c
+# print(if16(3, 5, 8))
+# print(if16(3, 5, 2))
+
+
+
+
+
+# # 13
+# def if17(a, b, c):
+#     return (a*2, b*2, c*2) if (a > b > c or c > b > a) else (-a, -b, -c)
+# print(if17(8, 4, 1))
+        
+
+
+
+# # 14
+# def if18(a, b, c):
+#     if a == b != c:
+#         return int(3)
+#     elif b == c != a:
+#         return int(1)
+#     elif a == c != b:
+#         return int(2)
+# print(if18(3, 4, 3))
+
+
+# # 15
+# def if19(a, b, c, d):
+#     if a == b == c != d:
+#         return 4
+#     elif a == b == d != c:
+#         return 3
+#     elif a == d == c != b:
+#         return 2
+#     else:
+#         return 1
+# print(if19(2, 2, 3, 2))
+
+
+
+# # 16
+# def if20(A, B, C):
+#     if abs(A - B) < abs(A - C):
+#         print("B", abs(A - B))
+#     else:
+#         print("C", abs(A - C))
+
+# if20(2, 4, 5)
+
+
+
+
+
+# # 17
+# def if21(x, y):
+#     if x == y == 0:
+#         return 0
+#     elif x == 0 and y != 0:
+#         return 2
+#     elif y == 0 and x != 0:
+#         return 1
+#     else:
+#         return 3
+# print(if21(0, 3))
+
+
+
+
+# # 18
+# def if22(x, y):
+#     if x > 0 and 0 < y:
+#         return 1
+#     elif x > 0 and 0 > y:
+#         return 4
+#     elif y > 0 and x < 0:
+#         return 2
+#     elif x < 0 and 0 > y:
+#         return 3
+#     else:
+#         return "Kordinata o'qida yotmasligi kerak"
+
+# print(if22(-2, 12))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
