@@ -1413,17 +1413,107 @@
 
 
 
+                             ####################################################
+                             #                                                  # 
+                             #  19.07.2026 if davomi va tanlashga oidlar        #
+                             #                                                  #
+                             ####################################################                                                        
+
+
+
+# # 20
+# import math
+
+# def if24(x):
+#     if x > 0:
+#         fx = 2 * math.sin(x)
+#     else:
+#         fx = x - 6
+#     return fx
+# print(if24(-1))
 
 
 
 
 
+# # 21
+# def if25(x):
+#     if x > 2 and x < -2:
+#         fx = 2 * x
+#     else:
+#         fx = -3 * x
+#     return fx
+# print(if25(3))
+
+
+
+# # 22
+# def if26(x):
+#     if x <= 0:
+#         fx = -x
+#     elif x > 0 and x < 2:
+#         fx = x**2
+#     else:
+#         fx = 4
+#     return fx
+# print(if26(2))
+
+
+
+
+# # 23
+# import math
+# def if27(x):
+#     if x < 0:
+#         fx = 0
+#     elif math.floor(x) % 2 == 0:
+#         fx = 1
+#     elif math.floor(x) % 2 == 1:
+#         fx = -1
+
+#     return fx
+
+# print(if27(4.2))
 
 
 
 
 
+# # 24
+# def if28(year):
+#     if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+#         return 366
+#     return 365
+# print(if28(2020)) 
 
+
+
+
+# # 25
+# def if29(x):
+#     if x % 2 == 0 and x > 0:
+#         return "Musbat juft son"
+#     elif x % 2 == 0 and x < 0:
+#         return "Manfiy juft son"
+#     elif x % 2 != 0 and x > 0:
+#         return "Musbat toq son"
+#     elif x % 2 != 0 and x < 0:
+#         return "Manfiy toq son"
+#     return "Nol"
+# print(if29(-3))
+
+
+
+
+# # 26
+# def if30(x):
+#     if len(str(x)) == int(1):
+#         return "1 xonali juft" if x % 2 == 0 else "1 xonali toq"
+#     elif len(str(x)) == 2:
+#         return "2 xonali juft" if x % 2 == 0 else "2 xonali toq"
+#     else:
+#         return "3 xonali juft" if x % 2 == 0 else "3 xonali toq"
+# print(if30(34))
 
 
 
