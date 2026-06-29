@@ -1521,6 +1521,447 @@
 
 
 
+#-----------------Tanlash operatorlari-----------------
+# # 1
+# hafta_kunlari = ["Dushanba", "Seshanba", "Chorshanba", "Payshanba", "Juma", "Shanba", "Yakshanba"]
+# kun = int(input("Kun raqammi: "))
+# print(hafta_kunlari[(kun - 1)])
+
+
+
+
+# # 2
+# k = int(input("k : "))
+
+# match k:
+#     case 1:
+#         print("yomon")
+#     case 2:
+#         print("qoniqarsiz")
+#     case 3:
+#         print("qoniqarli")
+#     case 4:
+#         print("yaxshi")
+#     case 5:
+#         print("alo")
+#     case _:
+#         print("xato")
+
+
+
+
+
+
+# # 3
+# oy = int(input("oy : "))
+# match oy:
+#     case 1 | 2 | 3:
+#         print("bahor")
+#     case 4 | 5 | 6:
+#         print("yoz")
+#     case 7 | 8 | 9:
+#         print("kuz")
+#     case 10 | 11 | 12:
+#         print("qish")
+
+# # 4 
+# oy = int(input("oy raqami : "))
+
+# match oy:
+#     case 1 | 3 | 5 | 7 | 8 | 10 | 12:
+#         print("31 kun")
+#     case 4 | 6 | 9 | 11:
+#         print("30 kun")
+#     case 2:
+#         print("28 yoki 29 kun kabisaga bog'liq")
+#     case _:
+#         print("Bunday oy yo'q")
+
+
+
+
+
+
+# # 5
+# def amal():
+#     a = int(input("a : "))
+#     b = int(input("b : "))
+#     char = input("Amalni kiriting: ")
+#     match char:
+#         case '+':
+#             return a + b
+#         case '-':
+#             return a - b
+#         case '*':
+#             return a * b
+#         case '/':
+#             return a / b
+#         case _:
+#             return "xato"
+# print(amal())
+
+
+
+
+
+# # 6
+# birlik = int(input("Birlikni tanlang (1-dm, 2-km, 3-m, 4-mm, 5-cm): "))
+# uzunlik = float(input("Kesma uzunligini kiriting: "))
+
+# match birlik:
+#     case 1:
+#         metr = uzunlik / 10  
+#     case 2:
+#         metr = uzunlik * 1000    
+#     case 3:
+#         metr = uzunlik         
+#     case 4:
+#         metr = uzunlik / 1000   
+#     case 5:
+#         metr = uzunlik / 100     
+#     case _:
+#         metr = -1
+#         print("Notogri birlik kiritildi!")
+# if metr != -1:
+#     print(f"Metrdagi uzunligi: {metr} m")
+
+
+
+# # 7
+# def konver():
+#     birlik = int(input("Birini tanlang: 1-kg, 2-mg, 3-g, 4-t, 5-sr "))
+#     massa = float(input("Massani kiriting "))
+
+#     match birlik:
+#         case 1:
+#             return massa
+#         case 2:
+#             return massa / 1_000_000
+#         case 3:
+#             return massa / 1000
+#         case 4:
+#             return massa * 1000
+#         case 5:
+#             return massa * 100
+#         case _:
+#             return 0
+        
+# print(konver())
+
+
+
+
+
+
+# # 8
+
+# def sana():
+#     day = int(input("Kunni kiriting: "))
+#     month = int(input("Oy raqami: "))
+
+#     match month:
+#         case 1 | 3 | 5 | 7 | 8 | 10 | 12:
+#             max_kun = 31
+#         case 4 | 6 | 9 | 11:
+#             max_kun = 30
+#         case 2:
+#             max_kun = 28
+#         case _:
+#             max_kun = 0
+#     if 1 <= day <= max_kun:
+#         oylar = ["yanvar", "fevral", "mart", "aprel", "may", "iyun", 
+#                 "iyul", "avgust", "sentabr", "oktabr", "noyabr", "dekabr"]
+#         print(f"{day}-{oylar[month-1]}")
+#     else:
+#         print("Bunday sana mavjud emas!")
+# print(sana())
+
+
+
+
+
+                             ####################################################
+                             #                                                  # 
+                             #  12.07.2026       tanlashga oidlar               #
+                             #                                                  #
+                             ####################################################                                                        
+
+
+
+
+
+
+
+
+# # 9
+
+# # mening yachimim ammo xatolik bor ekan
+# def case9():
+#     day = int(input("Day : ")) 
+#     month = int(input("Month : ")) 
+#     oylar = ["yanvar", "fevral", "mart", "aprel", "may", "iyun", 
+#                 "iyul", "avgust", "sentabr", "oktabr", "noyabr", "dekabr"]
+#     match month:
+#         case 1 | 3 | 5 | 7 | 8 | 10 | 12:
+#             max_day = 31
+#         case 4 | 6 | 9 | 11:
+#             max_day = 30
+#         case 2:
+#             max_day = 28
+#         case _:
+#             max_day = 0
+#     if day + 1 > max_day:
+#         return f"1-{oylar[month]}"
+#     else:
+#         return f"{day + 1}-{oylar[month - 1]}"
+# print(case9())
+
+
+
+# # gemini bergan yechim
+# def case9():
+#     day = int(input("Day : ")) 
+#     month = int(input("Month : ")) 
+#     oylar = ["yanvar", "fevral", "mart", "aprel", "may", "iyun", 
+#              "iyul", "avgust", "sentabr", "oktabr", "noyabr", "dekabr"]
+#     # Oydagi kunlar sonini aniqlash
+#     match month:
+#         case 1 | 3 | 5 | 7 | 8 | 10 | 12:
+#             max_day = 31
+#         case 4 | 6 | 9 | 11:
+#             max_day = 30
+#         case 2:
+#             max_day = 28
+#         case _:
+#             return "Bunday oy yo'q!" # Noto'g'ri oy kiritilsa xavfsizlik uchun
+#     # Kun to'g'ri kiritilganini tekshirish
+#     if day < 1 or day > max_day:
+#         return "Bunday kun mavjud emas!"
+#     # Keyingi kunni hisoblash
+#     if day + 1 > max_day:
+#         day = 1
+#         month += 1
+#         if month > 12: # Agar 31-dekabr bo'lsa, keyingi yil 1-yanvarga o'tadi
+#             month = 1
+#     else:
+#         day += 1
+#     return f"{day}-{oylar[month - 1]}"
+# print(case9())
+
+
+
+# # 10
+# # ajoyib masala
+# def case10():
+#     Y = input("Y : ")
+#     K = int(input("K : "))
+
+#     match Y:
+#         case 's': 
+#             match K:
+#                 case 0: return 's'
+#                 case 1: return 'g' 
+#                 case 2: return 'q' 
+#         case 'j': 
+#             match K:
+#                 case 0: return 'j'
+#                 case 1: return 'g'
+#                 case 2: return 'q'
+#         case 'g':
+#             match K:
+#                 case 0: return 'g'
+#                 case 1: return 's'
+#                 case 2: return 'j'
+#         case 'q':
+#             match K:
+#                 case 0: return 'q'
+#                 case 1: return 'j'
+#                 case 2: return 's'
+        
+# print(case10())  
+
+
+
+
+
+
+
+# # 11 ni yecha olmadim gemini ajoyib yechim berdi
+
+# # shunchaki ajoyib
+# def burilish(holat, komanda):
+#     match holat:
+#         case 's': # Shimol
+#             match komanda:
+#                 case 0: return 'q' # O'ngga -> Sharq
+#                 case 1: return 'g' # Chapga -> G'arb
+#                 case 2: return 'j' # 180 gradus -> Janub
+#         case 'j': # Janub
+#             match komanda:
+#                 case 0: return 'g' # O'ngga -> G'arb
+#                 case 1: return 'q' # Chapga -> Sharq
+#                 case 2: return 's' # 180 gradus -> Shimol
+#         case 'q': # Sharq
+#             match komanda:
+#                 case 0: return 'j' # O'ngga -> Janub
+#                 case 1: return 's' # Chapga -> Shimol
+#                 case 2: return 'g' # 180 gradus -> G'arb
+#         case 'g': # G'arb
+#             match komanda:
+#                 case 0: return 's' # O'ngga -> Shimol
+#                 case 1: return 'j' # Chapga -> Janub
+#                 case 2: return 'q' # 180 gradus -> Sharq
+
+# def case11():
+#     Y = input("Boshlang'ich holat (s, j, q, g): ")
+#     K1 = int(input("K1 komanda (0, 1, 2): "))
+#     K2 = int(input("K2 komanda (0, 1, 2): "))
+#     # 1-komandadan keyingi holat
+#     Y = burilish(Y, K1)
+#     # 2-komandadan keyingi yakuniy holat
+#     Y = burilish(Y, K2)
+#     return Y
+# print(case11())
+
+
+
+
+
+
+
+# # 12
+# # qiyin emas ekan
+# import math
+# def case12():
+#     num = int(input("Enter num : "))
+#     qiymat = float(input("Enter qiymat : "))
+#     pi = 3.14
+
+#     match num:
+#         case 1:
+#             R = qiymat
+#             S = pi*R*R
+#             L = 2*pi*R
+#             D = 2*R
+#             return f"R = {R}, D = {D}, S = {S}, L = {L}"
+#         case 2:
+#             D = qiymat
+#             S = pi*D*D/4
+#             L = pi*D
+#             R = D/2
+#             return f"R = {R}, D = {D}, S = {S}, L = {L}"
+#         case 3:
+#             L = qiymat
+#             S = pow(L, 2)/(4*pi)
+#             R = L/(2*pi)
+#             D = 2*R
+#             return f"R = {R}, D = {D}, S = {S}, L = {L}"
+#         case 4:
+#             S = qiymat
+#             R = pow(S/pi, 1/2)
+#             L = pow(4*pi*S, 1/2)
+#             D = R * 2
+#             return f"R = {R}, D = {D}, S = {S}, L = {L}"
+# print(case12())
+        
+        
+        
+
+# def case13():
+#     num = int(input("Num : "))
+#     value = float(input("Enter value : "))
+
+#     ildiz_2 = pow(2, 1/2) 
+    
+#     match num:
+#         case 1: 
+#             a = value
+#             c = a * ildiz_2
+#             h = c / 2
+#             S = (c * h) / 2 
+#             return f"S = {S}, h = {h}, c = {c}, a = {a}"
+#         case 2: 
+#             c = value
+#             a = c / ildiz_2
+#             h = c / 2
+#             S = (c * h) / 2
+#             return f"S = {S}, h = {h}, c = {c}, a = {a}"
+#         case 3: 
+#             h = value
+#             c = 2 * h
+#             a = h * ildiz_2
+#             S = h * h
+#             return f"S = {S}, h = {h}, c = {c}, a = {a}"
+#         case 4: 
+#             S = value
+#             h = pow(S, 1/2) 
+#             c = 2 * h
+#             a = h * ildiz_2
+#             return f"S = {S}, h = {h}, c = {c}, a = {a}"
+# print(case13())
+
+
+
+
+#############################################################################################################################################
+# 21.06.2026
+
+
+
+
+
+# # 14
+# def case14():
+#     num = int(input("Element raqamini kiriting (1-4): "))
+#     value = float(input("Uning qiymatini kiriting: "))
+#     ildiz3 = 3 ** 0.5
+
+#     match num:
+#         case 1:
+#             a = value
+#             r = a * ildiz3 / 6
+#             R = 2 * r
+#             S = (a ** 2) * ildiz3 / 4
+            
+#         case 2: 
+#             r = value
+#             a = 6 * r / ildiz3
+#             R = 2 * r
+#             S = 3 * ildiz3 * (r ** 2)
+            
+#         case 3:
+#             R = value
+#             r = R / 2
+#             a = R * ildiz3
+#             S = 3 * ildiz3 * (R ** 2) / 4
+            
+#         case 4: 
+#             S = value
+#             a = (4 * S / ildiz3) ** 0.5
+#             r = (S / (3 * ildiz3)) ** 0.5
+#             R = (4 * S / (3 * ildiz3)) ** 0.5
+            
+#         case _:
+#             return "Xato! Raqam 1 dan 4 gacha bo'lishi kerak."
+#     return f"Natijalar:\na = {a:.2f}\nr = {r:.2f}\nR = {R:.2f}\nS = {S:.2f}"
+# print(case14())
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
 
 
 
